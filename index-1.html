@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Springy Corner | ملابس وأدوات منزلية</title>
+<meta name="description" content="Springy Corner - ملابس وأدوات منزلية. الدفع كاش عند الاستلام والشحن داخل الإسكندرية من 30 إلى 45 جنيه.">
+<style>
+:root{--pink:#ff6f91;--green:#35b6a6;--dark:#1f2937;--muted:#6b7280;--bg:#fff7fb;--card:#fff;--border:#f3d5df;--whatsapp:#128c7e}
+*{box-sizing:border-box}
+body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:var(--dark);line-height:1.7}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1100px;margin:auto;padding:16px}
+.hero{background:linear-gradient(135deg,#fff,#ffe4ee);border-bottom:1px solid var(--border)}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;flex-wrap:wrap}
+.logo{font-size:25px;font-weight:900}
+.badge{background:var(--pink);color:#fff;border-radius:999px;padding:4px 10px;font-size:12px}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:center;padding:26px 0}
+h1{font-size:38px;margin:0 0 10px}
+h2{margin:24px 0 12px}
+.hero p{font-size:18px;color:var(--muted);margin:0 0 16px}
+.box,.product,.order{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:16px;box-shadow:0 10px 28px rgba(31,41,55,.07)}
+.btn,button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:14px;padding:11px 16px;font-weight:800;cursor:pointer;font-family:inherit}
+.primary{background:var(--whatsapp);color:#fff}
+.secondary{background:#fff;border:1px solid var(--border)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.chip{background:#fff;border:1px solid var(--border);border-radius:999px;padding:6px 10px;color:var(--muted);font-size:13px}
+.notice{background:#fff7db;border:1px solid #ffe08a;color:#6b4e00;border-radius:14px;padding:12px;margin-top:10px}
+.controls{display:grid;grid-template-columns:1fr 170px;gap:10px;margin:12px 0 18px}
+input,select,textarea{width:100%;border:1px solid var(--border);border-radius:13px;padding:12px;background:#fff;font-family:inherit}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.product{overflow:hidden;padding:0}
+.product img{width:100%;height:190px;object-fit:cover;background:#f3f4f6;display:block}
+.product .placeholder{height:190px;background:linear-gradient(135deg,#ffe4ee,#e3fff9);display:flex;align-items:center;justify-content:center;font-size:54px}
+.product-body{padding:14px}
+.product h3{margin:0 0 6px;font-size:18px}
+.small{color:var(--muted);font-size:13px}
+.price{font-size:20px;font-weight:900;color:var(--pink);margin:8px 0}
+.product-actions{display:flex;gap:8px;align-items:center}
+.product-actions input{width:74px;text-align:center}
+.cart-row{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed var(--border);padding:9px 0}
+.remove{background:#fee2e2;color:#991b1b;padding:6px 9px;border-radius:10px}
+.order-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.total{font-size:22px;font-weight:900;color:var(--whatsapp)}
+.sticky{position:sticky;bottom:0;background:#fff;border-top:1px solid var(--border);box-shadow:0 -8px 24px rgba(31,41,55,.08);z-index:3}
+.sticky-inner{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.chat{position:fixed;left:14px;bottom:86px;width:330px;max-width:calc(100% - 28px);background:#fff;border:1px solid var(--border);border-radius:20px;box-shadow:0 12px 35px rgba(31,41,55,.2);overflow:hidden;display:none;z-index:10}
+.chat-head{background:var(--green);color:#fff;padding:12px;font-weight:900}
+.chat-body{height:250px;overflow:auto;padding:12px}
+.msg{margin:8px 0;padding:9px 11px;border-radius:14px;max-width:86%}
+.bot{background:#f3f4f6}
+.me{background:#dcfce7;margin-right:auto}
+.chat-foot{display:flex;gap:6px;padding:10px;border-top:1px solid var(--border)}
+.floating{position:fixed;left:14px;bottom:20px;background:var(--green);color:#fff;border-radius:999px;padding:13px 16px;box-shadow:0 8px 24px rgba(31,41,55,.2);z-index:9}
+footer{text-align:center;color:var(--muted);padding:30px 0 90px}
+@media(max-width:850px){.hero-grid,.grid,.order-grid{grid-template-columns:1fr}.controls{grid-template-columns:1fr}h1{font-size:30px}.sticky-inner{font-size:14px}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <header>
+      <div class="logo">🌸 Springy Corner <span class="badge">Alexandria</span></div>
+      <a class="btn secondary" href="https://www.facebook.com/share/g/1GTRkvc7hX/" target="_blank">Facebook Group</a>
+    </header>
+
+    <div class="hero-grid">
+      <div>
+        <h1>تسوقي بسهولة من Springy Corner</h1>
+        <p>ملابس وأدوات منزلية مختارة بعناية. الدفع كاش عند الاستلام، والمعاينة وقت الاستلام فقط.</p>
+        <a class="btn primary" href="https://wa.me/201008992086" target="_blank">تواصلي واتساب</a>
+        <div class="chips">
+          <span class="chip">الشحن داخل الإسكندرية 30–45 جنيه</span>
+          <span class="chip">Cash on Delivery</span>
+          <span class="chip">Messenger / WhatsApp</span>
+        </div>
+      </div>
+
+      <div class="box">
+        <b>طريقة الطلب</b>
+        <p class="small">اختاري المنتجات، أضيفيها للسلة، اكتبي بياناتك، ثم أرسلي الطلب على واتساب.</p>
+        <div class="notice">يمكن تعديل المنتجات والأسعار والصور من Google Sheet مباشرة.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <section>
+    <h2>المنتجات</h2>
+    <div class="controls">
+      <input id="search" placeholder="ابحثي عن منتج..." oninput="renderProducts()">
+      <select id="category" onchange="renderProducts()">
+        <option value="all">كل الأقسام</option>
+      </select>
+    </div>
+    <div id="products" class="grid">جاري تحميل المنتجات...</div>
+  </section>
+
+  <section>
+    <h2>السلة وإتمام الطلب</h2>
+    <div class="order">
+      <div id="cartItems" class="small">السلة فارغة.</div>
+      <p class="total">الإجمالي: <span id="total">0</span> جنيه</p>
+
+      <div class="order-grid">
+        <input id="name" placeholder="الاسم">
+        <input id="phone" placeholder="رقم الموبايل">
+      </div>
+      <textarea id="address" rows="3" placeholder="العنوان داخل الإسكندرية"></textarea>
+      <textarea id="notes" rows="2" placeholder="ملاحظات / المقاس / اللون"></textarea>
+
+      <button class="primary" onclick="sendOrder()">إرسال الطلب على واتساب</button>
+      <p class="small">الشحن يضاف حسب المنطقة داخل الإسكندرية من 30 إلى 45 جنيه.</p>
+    </div>
+  </section>
+</main>
+
+<div class="sticky">
+  <div class="wrap sticky-inner">
+    <b>السلة: <span id="count">0</span> منتج</b>
+    <b>الإجمالي: <span id="stickyTotal">0</span> جنيه</b>
+  </div>
+</div>
+
+<button class="floating" onclick="toggleChat()">مساعد Springy</button>
+
+<div class="chat" id="chat">
+  <div class="chat-head">مساعد Springy Corner</div>
+  <div class="chat-body" id="chatBody">
+    <div class="msg bot">أهلاً 🌸 اسأليني عن الشحن، الدفع، طريقة الطلب أو رقم الواتساب.</div>
+  </div>
+  <div class="chat-foot">
+    <input id="chatInput" placeholder="اكتبي سؤالك">
+    <button class="primary" onclick="replyChat()">إرسال</button>
+  </div>
+</div>
+
+<footer>Springy Corner © 2026</footer>
+
+<script>
+const SHEET_URL = "https://docs.google.com/spreadsheets/d/1zDD9wK4_KAg-IJYsq19wupopcqORdTn_yD6PRH3FhvI/gviz/tq?tqx=out:csv&sheet=Products";
+const WHATSAPP = "201008992086";
+let products = [];
+let cart = [];
+
+function parseCSV(text){
+  const rows = [];
+  let row = [], cell = "", quote = false;
+  for(let i=0;i<text.length;i++){
+    const ch = text[i], next = text[i+1];
+    if(ch === '"' && quote && next === '"'){ cell += '"'; i++; }
+    else if(ch === '"'){ quote = !quote; }
+    else if(ch === "," && !quote){ row.push(cell); cell = ""; }
+    else if((ch === "\n" || ch === "\r") && !quote){
+      if(cell !== "" || row.length){ row.push(cell); rows.push(row); row=[]; cell=""; }
+      if(ch === "\r" && next === "\n") i++;
+    } else { cell += ch; }
+  }
+  if(cell !== "" || row.length){ row.push(cell); rows.push(row); }
+  const headers = rows.shift().map(h => h.trim().toLowerCase());
+  return rows.map(r => {
+    const obj = {};
+    headers.forEach((h,i)=> obj[h] = (r[i] || "").trim());
+    return obj;
+  });
+}
+
+function categoryLabel(cat){
+  const c = (cat || "").toLowerCase();
+  if(c === "home") return "أدوات منزلية";
+  if(c === "clothes") return "ملابس";
+  return cat || "عام";
+}
+
+async function loadProducts(){
+  try{
+    const res = await fetch(SHEET_URL);
+    const text = await res.text();
+    products = parseCSV(text).filter(p => (p.available || "yes").toLowerCase() !== "no" && (p.name || "").trim());
+    buildCategories();
+    renderProducts();
+  }catch(e){
+    document.getElementById("products").innerHTML = "<div class='box'>حدث خطأ في تحميل المنتجات. تأكد أن الشيت Anyone with the link وأن اسم التاب Products.</div>";
+  }
+}
+
+function buildCategories(){
+  const select = document.getElementById("category");
+  const cats = [...new Set(products.map(p => p.category || "عام").filter(Boolean))];
+  cats.forEach(c => {
+    const opt = document.createElement("option");
+    opt.value = c;
+    opt.textContent = categoryLabel(c);
+    select.appendChild(opt);
+  });
+}
+
+function renderProducts(){
+  const q = document.getElementById("search").value.toLowerCase();
+  const cat = document.getElementById("category").value;
+  const list = products.filter(p => {
+    const matchQ = (p.name + " " + p.description + " " + p.category).toLowerCase().includes(q);
+    const matchC = cat === "all" || p.category === cat;
+    return matchQ && matchC;
+  });
+
+  document.getElementById("products").innerHTML = list.map((p) => {
+    const idx = products.indexOf(p);
+    const img = p.image ? `<img src="${p.image}" alt="${p.name}" onerror="this.replaceWith(makePlaceholder())">` : `<div class="placeholder">🌸</div>`;
+    return `<div class="product">
+      ${img}
+      <div class="product-body">
+        <h3>${p.name}</h3>
+        <div class="small">${categoryLabel(p.category)} ${p.description ? "• " + p.description : ""}</div>
+        <div class="price">${Number(p.price || 0)} جنيه</div>
+        <div class="product-actions">
+          <input id="qty${idx}" type="number" min="1" value="1">
+          <button class="primary" onclick="addToCart(${idx})">إضافة للسلة</button>
+        </div>
+      </div>
+    </div>`;
+  }).join("") || "<div class='box'>لا توجد منتجات مطابقة.</div>";
+}
+
+function makePlaceholder(){
+  const d = document.createElement("div");
+  d.className = "placeholder";
+  d.textContent = "🌸";
+  return d;
+}
+
+function addToCart(index){
+  const p = products[index];
+  const qty = Math.max(1, Number(document.getElementById("qty"+index)?.value || 1));
+  const found = cart.find(x => x.id === p.id && x.name === p.name);
+  if(found) found.qty += qty;
+  else cart.push({...p, qty});
+  renderCart();
+}
+
+function removeItem(i){
+  cart.splice(i,1);
+  renderCart();
+}
+
+function renderCart(){
+  let total = 0, count = 0;
+  document.getElementById("cartItems").innerHTML = cart.map((p,i)=>{
+    const price = Number(p.price || 0);
+    total += price * p.qty;
+    count += p.qty;
+    return `<div class="cart-row">
+      <span>${p.name} × ${p.qty}</span>
+      <span><b>${price*p.qty} جنيه</b> <button class="remove" onclick="removeItem(${i})">حذف</button></span>
+    </div>`;
+  }).join("") || "السلة فارغة.";
+  document.getElementById("total").textContent = total;
+  document.getElementById("stickyTotal").textContent = total;
+  document.getElementById("count").textContent = count;
+}
+
+function sendOrder(){
+  if(!cart.length){ alert("من فضلك أضيفي منتج للسلة أولاً"); return; }
+
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const address = document.getElementById("address").value.trim();
+  const notes = document.getElementById("notes").value.trim();
+
+  if(!name || !phone || !address){
+    alert("من فضلك اكتبي الاسم ورقم الموبايل والعنوان.");
+    return;
+  }
+
+  const total = cart.reduce((s,p)=>s + Number(p.price || 0)*p.qty,0);
+  let msg = "طلب جديد من Springy Corner%0A%0A";
+  cart.forEach(p => msg += `- ${p.name} × ${p.qty} = ${Number(p.price||0)*p.qty} جنيه%0A`);
+  msg += `%0Aالإجمالي بدون الشحن: ${total} جنيه`;
+  msg += `%0Aالشحن داخل الإسكندرية: 30 إلى 45 جنيه`;
+  msg += `%0A%0Aالاسم: ${encodeURIComponent(name)}`;
+  msg += `%0Aالموبايل: ${encodeURIComponent(phone)}`;
+  msg += `%0Aالعنوان: ${encodeURIComponent(address)}`;
+  msg += `%0Aملاحظات: ${encodeURIComponent(notes)}`;
+
+  window.open(`https://wa.me/${WHATSAPP}?text=${msg}`, "_blank");
+}
+
+function toggleChat(){
+  const c = document.getElementById("chat");
+  c.style.display = c.style.display === "block" ? "none" : "block";
+}
+
+function addMsg(text, cls){
+  const body = document.getElementById("chatBody");
+  body.innerHTML += `<div class="msg ${cls}">${text}</div>`;
+  body.scrollTop = body.scrollHeight;
+}
+
+function replyChat(){
+  const input = document.getElementById("chatInput");
+  const q = input.value.trim();
+  if(!q) return;
+  addMsg(q, "me");
+
+  let a = "تقدري تختاري المنتجات وتضيفيها للسلة، ثم ترسلي الطلب على واتساب.";
+  if(q.includes("شحن")) a = "الشحن داخل الإسكندرية من 30 إلى 45 جنيه حسب المنطقة.";
+  if(q.includes("دفع") || q.includes("كاش")) a = "الدفع كاش عند الاستلام فقط.";
+  if(q.includes("معاينة")) a = "المعاينة وقت الاستلام فقط.";
+  if(q.includes("واتس") || q.includes("رقم")) a = "رقم الواتساب: 01008992086.";
+  if(q.includes("طلب")) a = "اختاري المنتج، أضيفيه للسلة، اكتبي بياناتك، ثم اضغطي إرسال الطلب على واتساب.";
+
+  setTimeout(()=>addMsg(a, "bot"), 250);
+  input.value = "";
+}
+
+loadProducts();
+renderCart();
+</script>
+</body>
+</html>
